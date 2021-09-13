@@ -1,0 +1,45 @@
+### Get All Tasks
+GET http://localhost:3000/api/tasks
+
+
+### Get All Tasks
+GET http://localhost:3000/api/tasks?size=4&page=2
+
+
+### Get All Tasks
+GET http://localhost:3000/api/tasks?page=0&size=4
+
+
+### Get All Tasks
+GET http://localhost:3000/api/tasks?page=0&size=4&title=wix
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Task 1",
+    "description": "Trabajo FreeLance",
+    "done": true
+}
+
+
+### Get a Task
+GET http://localhost:3000/api/tasks/60d8e7d037696e17fcddca1c
+
+
+###
+DELETE http://localhost:3000/api/tasks/60d8e7d037696e17fcddca1c
+
+
+###
+GET http://localhost:3000/api/tasks/done
+
+
+###
+PUT http://localhost:3000/api/tasks/60d90b39acf90510b08fa75c
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio web en WIX"
+}
